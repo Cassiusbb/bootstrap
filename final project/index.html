@@ -12,7 +12,22 @@
 
     <title>Cassius Website</title>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Scroll Navbar</title>
 
+    <style>
+        html {
+            scroll-behavior: smooth; /* enables smooth scrolling */
+        }
+
+        section {
+            height: 600px;
+            padding: 20px;
+        }
+    </style>
+</head>
 
 </head>
 
@@ -20,35 +35,72 @@
 
 
     <!-- this begins the header code -->
+<header>
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Navbar</title>
+    <style>
+        .navbar {
+            background-color: #000 !important; /* Black header */
+        }
 
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        /* Shared rainbow gradient */
+        .rainbow-text {
+            font-weight: 800; /* Thicker text */
+            background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+            background-size: 400%;
+            background-clip: text;
+            color: transparent !important;
+            animation: rainbowShift 10s infinite linear;
+        }
+
+        @keyframes rainbowShift {
+            0% { background-position: 0%; }
+            100% { background-position: 400%; }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="images/GWDS.svg" alt="Logo" width="40" height="40" 
-      class="d-inline-block align-text-top">
-       ★Cassius★ 
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+    <!-- rainbow effect -->
+    <a class="navbar-brand rainbow-text" href="#">★Cassius★</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"></a>
+          <a class="nav-link rainbow-text" href="#work">★Work★</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">★Graphics★</a>
+          <a class="nav-link rainbow-text" href="#about">★About Me★</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">★About Me★</a>
+          <a class="nav-link rainbow-text" href="#graphic">★Graphics★</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true"></a>
-        </li>
+        
+         
       </ul>
     </div>
+
   </div>
 </nav>
+</header>
+
+</body>
+</html>
+
+
+    
     <header>
 
     <!-- I forgot to have you put the header in, so you get this on on me -->
@@ -67,7 +119,7 @@
      <div id="carouselExampleFade" class="carousel slide carousel-fade">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="images/selfintro.jpg" class="d-block w-100" alt="...">
+        <img src="images/introphoto1.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
         <img src="images/944.jpeg" class="d-block w-100" alt="...">
@@ -88,38 +140,35 @@
 </div>
 
 <div class="container py-3">
+  <section id="about">
     <h1 class="display-1 text-center">★About Me★</h1>
     <h2 class="'display-1 text-center">Cassius Butler - Broad</h2>
     <p class="lead text-center">Hi ! I am Cassius, I am a first year digital media student. 
 I enjoy allot of things including; Bikes, Skateboarding, Pin badges, strange fashion, tats, beer ! and much much more. I hope that with my degree I can work towards something I am passionate about in maybe one of these fields if not all of them, I hope to make and produce my own magazine one day where I can use my skills to present something im passionate about ! </p>
+</section>
 </div>
-
-
-
         <!-- Beginning of row col -->
-         
+<section id="graphic">
 <div class="container-fluid">
   <div class="row mb-3">
     <div class="col-md-4">
         <img src="images/leftphoto.jpg" class="img-fluid" alt="...">
         <h4>Liminal Men</h4>
-        <p>How doth the little crocodile Improve his shining tail, And pour the waters of the Nile On every golden scale! How cheerfully he seems to grin, How neatly spreads his claws, 
-            And welcomes little fishes in, With gently smiling jaws!</p>
+        <p>This Graphic is demonstrating the usage of space in a design using the direction of there arms to point around creating a fluid connection</p>
     </div>
     <div class="col-md-4">
       <img src="images/middlephoto.jpg" class="img-fluid" alt="...">
       <h4>cubonic</h4>
-      <p>"You are old, Father William," the young man said, "And your hair has become very white; 
-        And yet you incessantly stand on your head — Do you think, at your age, it is right?""In my youth," Father William replied to his son, "I feared it might injure the brain; But now that I'm perfectly sure I have none, Why, I do it again and again."
+      <p>This images the use of repetion in each frame but with slight changes it gives a stand out effect to each cube bring an interesting composition to the images
       </p>
     </div>
     <div class="col-md-4">
       <img src="images/rightphoto.jpg" class="img-fluid" alt="...">
       <h4>Everlasting circles
       </h4>
-      <p>The time has come,' the Walrus said, To talk of many things: 
-        Of shoes — and ships — and sealing-wax — Of cabbages — and kings — And why the sea is boiling hot — And whether pigs have wings.'But wait a bit,' the Oysters cried, Before we have our chat; For some of us are out of breath, And all of us are fat!' No hurry!' said the Carpenter. They thanked him much for that.
+      <p>This composition uses the rules of size. It shows cirlces going from larger to bigger creating a more striking image the contrast between the back drop also emphasises the changes between the circles in the image.
     </p>
+  </secton>
     </div>
   </div>
 </div>
@@ -175,5 +224,6 @@ I enjoy allot of things including; Bikes, Skateboarding, Pin badges, strange fas
     <script src="js/bootstrap.min.js"></script>
 
 </body>
+
 
 </html>
