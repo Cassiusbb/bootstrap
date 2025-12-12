@@ -7,19 +7,5 @@
        
 
 
-body {
-            margin: 0;
-        }
-
-        /* Navbar ALWAYS on top */
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 70px; /* adjust for your navbar height */
-            background: black;
-            z-index: 9999;  /* keeps navbar above everything */
-        }
 
         

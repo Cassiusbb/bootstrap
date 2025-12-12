@@ -1,0 +1,104 @@
+body {
+
+    overscroll-behavior-y: none;
+    margin: 0;
+}
+
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    overflow: auto;
+    height: 100%;
+}
+
+/* Navbar ALWAYS on top */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    /* adjust navbar height */
+    background: black;
+    z-index: 9999;
+    /* keeps navbar above everything */
+}
+
+.photo-wrapper {
+    max-width: 1000;
+    /* size of the container */
+    margin: 40px auto;
+    /* centers it horizontally */
+    text-align: center;
+    /* centers text and image */
+}
+
+.photo-wrapper img {
+    width: 100%;
+}
+
+.photo-text {
+    margin-top: 15px;
+    padding: 15px;
+    background: #ffffff;
+    font-size: 1.1rem;
+}
+
+footer {
+    background: #000;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-info {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.img-left {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -9999;
+
+
+
+
+}
+
+.img-right {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -9999;
+}
+
+.footer {
+    background: #000;
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .footer-info {
+        margin-top: 20px;
+        font-size: 1.5rem;
+        color: white;
+    }
+
+
+
+.body {
+    scroll-behavior: smooth;
+     /* smooth scrolling */
+      }
+
+      section {
+        height: 300px;
+        padding: 20px;
+      }
