@@ -25,6 +25,33 @@ nav {
     background: black;
     z-index: 9999;
     /* keeps navbar above everything */
+
+}
+
+.navbar {
+    background-color: #000 !important;
+    /* Black header */
+}
+
+/* rainbow gradient */
+.rainbow-text {
+    font-weight: 800;
+    /* Thicker text */
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 400%;
+    background-clip: text;
+    color: transparent !important;
+    animation: rainbowShift 10s infinite linear;
+}
+
+@keyframes rainbowShift {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
 }
 
 .photo-wrapper {
@@ -80,25 +107,55 @@ footer {
 
 .footer {
     background: #000;
-        color: white;
-        padding: 40px 20px;
-        text-align: center;
-    }
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
 
-    .footer-info {
-        margin-top: 20px;
-        font-size: 1.5rem;
-        color: white;
-    }
+.footer-info {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: white;
+}
 
 
 
 .body {
     scroll-behavior: smooth;
-     /* smooth scrolling */
-      }
+    /* smooth scrolling */
+}
 
-      section {
-        height: 300px;
-        padding: 20px;
-      }
+section {
+    height: 300px;
+    padding: 20px;
+}
+
+.photo-wrapper {
+    max-width: 1000;
+    /* size of the container */
+    margin: 40px auto;
+    /* centers it horizontally */
+    text-align: center;
+    /* centers text and image */
+}
+
+.photo-wrapper img {
+    width: 100%;
+}
+
+.photo-text {
+    margin-top: 15px;
+    padding: 15px;
+    background: #ffffff;
+    font-size: 1.1rem;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* smooth scrolling */
+}
+
+section {
+    height: 300px;
+    padding: 20px;
+}
